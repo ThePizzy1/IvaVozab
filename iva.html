@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iva Vozab | Software Developer</title>
+
+  <style>
+    :root {
+      --bg: #0f1115;
+      --bg-light: #161a22;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #6366f1;
+      --border: #252a36;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--bg-light);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: var(--text);
+      max-width: 650px;
+    }
+
+    .links {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+
+    section {
+      margin-bottom: 70px;
+    }
+
+    section h3 {
+      font-size: 1.6rem;
+      margin-bottom: 25px;
+      border-left: 4px solid var(--accent);
+      padding-left: 15px;
+    }
+
+    .card {
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 20px;
+    }
+
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .skills h4 {
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      background: #1f2430;
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 40px 0 10px;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero img {
+        margin: auto;
+      }
+
+      .links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+   
+    <div class="hero">
+      <img src="iva.jpg" alt="Iva Vozab">
+
+      <div>
+        <h1>Iva Vozab</h1>
+        <h2>bacc.ing.comp · Software / Full-Stack Developer</h2>
+
+        <p>
+          Završila sam preddiplomski studij Programskog inženjerstva na Veleučilištu
+          u Virovitici. Tijekom studija razvila sam snažan interes za izradu
+          softverskih rješenja, posebno web i full-stack aplikacija.
+          Iskustvo sam stekla kroz projekte, stručnu praksu i timska natjecanja,
+          radeći s tehnologijama poput C#, .NET-a, SQL-a i Vue.js-a.
+          Otvorena sam za nova znanja, izazove i kontinuirano usavršavanje u IT-u.
+        </p>
+
+        <div class="links">
+          <a href="https://github.com/ThePizzy1" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/iva-vozab-6961a21ba/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <h3>Vještine</h3>
+
+      <div class="skills">
+        <div class="card">
+          <h4>Frontend</h4>
+          <div class="tag-list">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Vue.js</span>
+            <span class="tag">React.js</span>
+            <span class="tag">Tailwind</span>
+            <span class="tag">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4>Backend</h4>
+          <div class="tag-list">
+            <span class="tag">C#</span>
+            <span class="tag">.NET</span>
+            <span class="tag">Web API</span>
+            <span class="tag">Java</span>
+            <span class="tag">jQuery</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4>Baze podataka</h4>
+          <div class="tag-list">
+            <span class="tag">SQL</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">JSON</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4>Alati & ostalo</h4>
+          <div class="tag-list">
+            <span class="tag">Git</span>
+            <span class="tag">Docker (basic)</span>
+            <span class="tag">AWS (basic)</span>
+            <span class="tag">Visual Studio</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Canva</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Radno iskustvo</h3>
+
+      <div class="card">
+        <strong>FINA – Financijska agencija, Zagreb</strong><br/>
+        <span class="muted">Stručna praksa · Full-Stack Developer (2025)</span>
+        <p>
+          Razvoj i održavanje web aplikacija koristeći C#, .NET, Vue.js, HTML, CSS i SQL.
+          Sudjelovanje u testiranju, dokumentiranju i radu na stvarnim poslovnim projektima.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h3>Obrazovanje</h3>
+
+      <div class="card">
+        <strong>Veleučilište u Virovitici</strong><br/>
+        Stručni prvostupnik inženjer računarstva
+      </div>
+
+      <div class="card">
+        <strong>Tehnička škola Daruvar</strong><br/>
+        Tehničar za računalstvo – smjer programer
+      </div>
+    </section>
+
+    <section>
+      <h3>Projekti & natjecanja</h3>
+
+      <div class="card">
+        <strong>Full-stack web aplikacija – sklonište za životinje</strong>
+        <p>
+          Završni rad izrađen kao full-stack aplikacija.
+          Frontend: Vue.js · Backend: C# .NET · Baza: SQL.
+          Projekt dostupan na GitHubu.
+        </p>
+      </div>
+
+      <div class="card">
+        <strong>LUMEN Development 2025</strong><br/>
+        Tim CodeVoyagers
+      </div>
+
+      <div class="card">
+        <strong>Europsko statističko natjecanje</strong><br/>
+        Tim ŠTAGOD
+      </div>
+    </section>
+
+    <footer>
+      © 2026 · Iva Vozab
+    </footer>
+
+  </div>
+</body>
+</html>
